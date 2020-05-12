@@ -1,0 +1,19 @@
+corpus:
+  name: WeeBit
+  reprocess: False
+
+k_fold: 5
+
+subsample_splits: 10
+
+short_name: Cnn age regression fed word vectors
+
+runner_type: gpu
+
+model: 
+  name: cnn_regression
+  params:
+    epochs: 30
+    nn_model: cnn_regression
+  regression: age
+  overwrite: False

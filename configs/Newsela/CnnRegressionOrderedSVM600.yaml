@@ -1,0 +1,23 @@
+corpus:
+  name: Newsela
+  reprocess: True
+  
+
+k_fold: 5
+
+subsample_splits: 1
+
+short_name: Cnn ordered class regression fed word vectors + SVM Lmit 600
+
+runner_type: gpu
+
+features:
+  - name: Neural
+    model_config: configs/Newsela/regressionOrderedCnn600.yaml
+    reprocess: True
+
+
+model: 
+  name: svm
+
+run: False

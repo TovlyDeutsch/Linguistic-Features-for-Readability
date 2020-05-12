@@ -1,0 +1,18 @@
+corpus:
+  name: Newsela
+  reprocess: True
+  
+
+k_fold: 5
+
+subsample_splits: 1
+
+short_name: Transformer (fed word vectors) 600 limit
+
+runner_type: gpu
+
+model: 
+  name: transformer
+  overwrite: False
+
+run: False

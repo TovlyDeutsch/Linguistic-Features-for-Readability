@@ -1,0 +1,18 @@
+corpus:
+  name: WeeBit
+  reprocess: False
+  limit: 600
+
+k_fold: 5
+
+subsample_splits: 1
+
+short_name: Flesch score + SVM
+
+runner_type: cpu_multi
+
+features:
+  - name: Flesch
+
+model: 
+  name: svm

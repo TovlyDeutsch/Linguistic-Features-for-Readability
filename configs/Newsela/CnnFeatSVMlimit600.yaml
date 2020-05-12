@@ -1,0 +1,23 @@
+corpus:
+  name: Newsela
+  reprocess: True
+  
+
+k_fold: 5
+
+subsample_splits: 1
+
+short_name: Cnn classification fed word vectors + SVM
+
+runner_type: gpu
+
+features:
+  - name: Neural
+    model_config: configs/Newsela/cnnLimit600.yaml
+    reprocess: True
+
+
+model: 
+  name: svm
+
+run: False

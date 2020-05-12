@@ -1,0 +1,20 @@
+corpus:
+  name: WeeBit
+  reprocess: False
+  limit: 600
+
+
+k_fold: 5
+
+subsample_splits: 1
+
+short_name: nbtfidf Limit 600
+
+runner_type: cpu_multi
+
+model: 
+  name: svm
+
+tfidf: True
+
+run: False

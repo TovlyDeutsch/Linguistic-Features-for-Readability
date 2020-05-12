@@ -1,0 +1,20 @@
+corpus:
+  name: Newsela
+  reprocess: True
+  
+
+k_fold: 5
+
+subsample_splits: 1
+
+short_name: Flesch score + linear regression
+
+runner_type: cpu_multi
+
+features:
+  - name: Flesch
+
+model: 
+  name: LinearSVC
+
+run: False

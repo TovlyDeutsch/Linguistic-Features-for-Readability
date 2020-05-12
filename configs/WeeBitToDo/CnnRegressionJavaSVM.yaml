@@ -1,0 +1,22 @@
+corpus:
+  name: WeeBit
+  reprocess: False
+
+k_fold: 5
+
+subsample_splits: 10
+
+short_name: Cnn age regression fed word vectors + ~100 Ling features + SVM
+
+runner_type: gpu
+
+features:
+  - name: JavaImporter
+    reprocess: True
+  - name: Neural
+    model_config: configs/WeeBit/regressionCnn.yaml
+    reprocess: True
+
+
+model: 
+  name: svm
