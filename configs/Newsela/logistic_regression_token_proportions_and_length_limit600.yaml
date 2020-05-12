@@ -1,0 +1,24 @@
+corpus:
+  name: Newsela
+  reprocess: True
+  
+
+
+k_fold: 5
+
+subsample_splits: 1
+
+short_name: Logistic regression classification with word types and word count
+
+runner_type: cpu_multi
+
+features:
+  - name: WordTypeProportions
+    reprocess: False
+  - name: WordCount
+    reprocess: False
+
+model: 
+  name: LogisticRegression
+
+run: False

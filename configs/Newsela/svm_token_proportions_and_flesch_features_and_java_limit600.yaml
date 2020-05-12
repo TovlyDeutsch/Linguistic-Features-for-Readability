@@ -1,0 +1,30 @@
+corpus:
+  name: Newsela
+  reprocess: True
+  
+
+
+k_fold: 5
+
+subsample_splits: 1
+
+short_name: Logistic regression classification with word types, Flesch features, and ling features
+
+runner_type: cpu_multi
+
+features:
+  - name: WordTypeProportions
+    reprocess: False
+  - name: WordCount
+    reprocess: False
+  - name: SentenceCount
+    reprocess: False
+  - name: SyllableCount
+    reprocess: False
+  - name: JavaImporter
+    reprocess: True
+
+model: 
+  name: svm
+
+run: False

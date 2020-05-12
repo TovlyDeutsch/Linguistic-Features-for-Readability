@@ -1,0 +1,27 @@
+corpus:
+  name: WeeBit
+  reprocess: False
+  limit: 100
+
+k_fold: 5
+
+subsample_splits: 10
+
+short_name: Cnn classification fed word vectors + ~100 Ling features + SVM
+
+runner_type: gpu
+
+features:
+  - name: JavaImporter
+    reprocess: True
+  - name: Neural
+    model_config: configs/WeeBit/cnn.yaml
+    reprocess: True
+
+
+model: 
+  name: svm
+
+run: False
+
+# Still need to run this

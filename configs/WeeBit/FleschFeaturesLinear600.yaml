@@ -1,0 +1,25 @@
+corpus:
+  name: WeeBit
+  reprocess: False
+  limit: 600
+
+k_fold: 5
+
+subsample_splits: 1
+
+short_name: Flesch features + linear regression limit 600
+
+runner_type: cpu_multi
+
+features:
+  - name: WordCount
+    reprocess: True
+  - name: SentenceCount
+    reprocess: True
+  - name: SyllableCount
+    reprocess: True
+
+model: 
+  name: LinearSVC
+
+run: False

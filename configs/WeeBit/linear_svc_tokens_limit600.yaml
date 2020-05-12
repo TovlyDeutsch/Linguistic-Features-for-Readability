@@ -1,0 +1,21 @@
+corpus:
+  name: WeeBit
+  reprocess: False
+  limit: 600
+
+k_fold: 5
+
+subsample_splits: 1
+
+short_name: Linear regression (SVC) classification with word types Limit 600
+
+runner_type: cpu_multi
+
+features:
+  - name: WordTypes
+    reprocess: False
+
+model: 
+  name: LinearSVC
+
+run: False

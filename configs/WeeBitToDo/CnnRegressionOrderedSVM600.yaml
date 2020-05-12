@@ -1,0 +1,21 @@
+corpus:
+  name: WeeBit
+  reprocess: False
+  limit: 600
+
+k_fold: 5
+
+subsample_splits: 1
+
+short_name: Cnn ordered class regression fed word vectors + SVM Lmit 600
+
+runner_type: gpu
+
+features:
+  - name: Neural
+    model_config: configs/WeeBit/regressionOrderedCnn600.yaml
+    reprocess: True
+
+
+model: 
+  name: svm

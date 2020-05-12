@@ -1,0 +1,82 @@
+corpus:
+  name: WeeBit
+  reprocess: False
+  limit: 600
+
+k_fold: 5
+
+subsample_splits: 1
+
+short_name: ~100 Ling features + Linear SVC Limit 600
+
+runner_type: cpu_multi
+
+features:
+  - name: JavaImporter
+    reprocess: True
+    include:
+      - TRAD_Coleman
+      - POS_tagSD
+      - SYN_numSBARsPerSen
+      - SYN_numSubtreesPerSen
+      - SYN_avgSentenceLength
+      - TRAD_numChars
+      - TRAD_ARI
+      - POS_squaredVerbVar1
+      - SYN_numClausesPerSen
+      - SYN_avgParseTreeHeightPerSen
+      - Word_TTR
+      - SYN_numPPsPerSen
+      - SYN_CoordPerClause
+      - TRAD_FOG
+      - SYN_TunitComplexityRatio
+      - SYN_numVPsPerSen
+      - POS_numVerbsVBD
+      - SYN_DependentClauseRatio
+      - POS_numModals
+      - POS_numNouns
+      - POS_numVerbsVBP
+      - POS_verbVar1
+      - Word_CTTR
+      - SYN_numNPsPerSen
+      - Word_RTTR
+      - WN_numHyponyms
+      - SYN_numPPSize
+      - TRAD_Kincaid
+      - WN_numHypernyms
+      - POS_correctedVV1
+      - POS_numLexicals
+      - SYN_CNPerClause
+      - SYN_top2Diff
+      - SYN_CoordPerTunit
+      - SYN_numSentences
+      - SYN_parseSD
+      - SYN_MLC
+      - POS_numConjunct
+      - Word_BilogTTR
+      - TRAD_LIX
+      - SYN_numRRCsPerSen
+      - SYN_numTunitsPerSen
+      - MRCFamiliarity
+      - POS_modVar
+      - SYN_numWHPsPerSen
+      - POS_numVerbs
+      - AoA_Bird_Lem
+      - SYN_CNPerTunit
+      - SYN_numVPSize
+      - POS_numVerbsVB
+      - Word_MTLD
+      - POS_numVerbsVBZ
+      - TRAD_Flesch
+      - POS_avgSenKLDiv
+      - AoA_Kup_Lem
+      - POS_verbVar2
+      - POS_numInterjections
+      - AoA_Cort_Lem
+      - MRCColMeaningfulness
+      - AoA_Kup
+
+model: 
+  name: LinearSVC
+
+run: False

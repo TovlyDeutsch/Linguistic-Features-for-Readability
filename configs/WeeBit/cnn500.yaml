@@ -1,0 +1,23 @@
+corpus:
+  name: WeeBit
+  reprocess: False
+  limit: 100
+
+k_fold: 5
+
+subsample_splits: 10
+
+short_name: Cnn classification fed word vectors
+
+runner_type: gpu
+
+model: 
+  name: cnn
+  params:
+    epochs: 30
+    nn_model: cnn
+  overwrite: True
+
+run: False
+
+# Still need to run this

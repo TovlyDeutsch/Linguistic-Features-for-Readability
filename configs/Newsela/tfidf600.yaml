@@ -1,0 +1,20 @@
+corpus:
+  name: Newsela
+  reprocess: True
+  
+
+
+k_fold: 5
+
+subsample_splits: 1
+
+short_name: nbtfidf
+
+runner_type: cpu_multi
+
+model: 
+  name: svm
+
+tfidf: True
+
+run: False
